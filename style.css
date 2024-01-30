@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 7vh;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.all-header:hover {
+    cursor: pointer;
+    font-size: 24px;
+    color: darkgrey;
+    border-radius: 5px;
+}
+
+.twi {
+    margin-right: 12px;
+}
+
+.all-header.active-header {
+    cursor: pointer;
+    color: darkgray;
+    font-weight: 0;
+    border-radius: 5px;  
+    opacity: 1;
+}
+
+.twi:hover {
+    border-radius: 5px;
+}
+
+.twitter,
+.facebook,
+.gmail {
+    width: 24px;
+    border-radius: 10px;
+    height: 24px;
+}
+
+#all-logo {
+    margin-top: 6px;
+    display: flex;
+    border-bottom: none;
+}
+
+.facebook:hover,
+.twitter:hover,
+.gmail:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: logo;
+    src: url(/fonts/FiraCode-Light.woff2);
+}
+
+.all-header {
+    font-family: logo;
+    font-weight: bolder;  
+    transition: color 0.3s, opacity 0.3s;
+    font-size: 24px;
+}
+
+.home-page {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 95vh;
+}
+
+@font-face {
+    font-family: frontt;
+    src: url(/fonts/FiraCode-Regular.woff2);
+}
+
+#core {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 150px;
+}
+
+
+.mid {  
+    font-family: frontt;
+    display: flex;
+    width: 40%;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    font-size: 20px;
+}
+
+.imgg {
+    width: 40%;
+}
+
+.imgg img {
+    width: 500px;
+    height: 650px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    100% {
+      opacity: 1; /* End with full opacity */
+    }
+}
+
+.mid {
+    animation-name: fadeIn; /* Use the defined keyframe animation */
+    animation-duration: 3s; /* Animation duration */
+    animation-fill-mode: both; /* Keeps the end state of the animation */
+}
+
+.mail a {
+    list-style: none;
+    text-decoration: none;
+    color: darkgray;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
